@@ -1,6 +1,4 @@
-#devtools::install_github("bodkan/geoslim", ref = "smbe2021")
-#library(geoslim)
-devtools::load_all(".")
+library(spannr)
 
 # -------------------------------------------------------------
 eurasia <- world(xrange = c(-15, 60), yrange = c(20, 65),
