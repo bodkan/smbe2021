@@ -1,0 +1,1 @@
+Run an interactive RStudio session with the demo script from our poster in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bodkan/smbe2021/HEAD)!
