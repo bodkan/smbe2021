@@ -1,1 +1,1 @@
-devtools::install_github("bodkan/spannr", ref = "cdbe6fe6fdd29d90799d1eeb4699947dd76ed43b")
+install.packages("sf")
