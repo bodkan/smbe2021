@@ -10,7 +10,7 @@ Please note that because the binder could instance does not have a SLiM installa
 
 ## Project website
 
-Our project lives at [www.bodkan.net/spannr](https://www.bodkan.net/spannr), which is where you can find extensive documentation such as the [manual](https://bodkan.net/spannr/reference/index.html) and a detailed [tutorial](https://bodkan.net/spannr/articles/tutorial.html). Everything is still work in progress and we are working on the project actively. If you are interested in using our software, checking out the project website once in a while is a good idea.
+Our project lives at [www.bodkan.net/spannr](https://www.bodkan.net/spannr), which is where you can find extensive documentation such as the [manual](https://bodkan.net/spannr/reference/index.html) and a detailed [tutorial](https://bodkan.net/spannr/articles/tutorial.html). Everything is still work in progress and we are actively fixing bugs and adding new features (while adding new bugs). If you are interested in using our software once things become more stable, checking out the project website for updates is a good idea.
 
 ## GitHub repository
 
