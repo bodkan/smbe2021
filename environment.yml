@@ -2,7 +2,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - libstdcxx
+  - libstdcxx-ng
   - r-base
   - r-tidyverse
   - geos
