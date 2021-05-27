@@ -1,7 +1,8 @@
 channels:
   - conda-forge
 dependencies:
-  - r-base=4.0
+  - libgcc
+  - r-base
   - r-tidyverse
   - geos
   - r-rgeos
