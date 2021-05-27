@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.0
+  - r-tidyverse
+  - geos
+  - r-rgeos
+  - r-rgdal
+  - r-sf
