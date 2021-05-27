@@ -1,4 +1,7 @@
 libudunits2-dev
-gdal
-geos
-proj
+gdal-bin
+libgdal-dev
+libgeos
+libgeos++-dev
+proj-bin
+libproj-dev
