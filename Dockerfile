@@ -1,22 +1,11 @@
-## Use a tag instead of "latest" for reproducibility
-FROM rocker/binder:latest
+FROM rocker/verse:4.0.5
 
-## Declares build arguments
-ARG NB_USER
-ARG NB_UID
+LABEL org.opencontainers.image.licenses="GPL-2.0-or-later" \
+      org.opencontainers.image.source="https://github.com/rocker-org/rocker-versioned2" \
+      org.opencontainers.image.vendor="Rocker Project" \
+      org.opencontainers.image.authors="Carl Boettiger <cboettig@ropensci.org>"
 
-## Copies your repo files into the Docker Container
-USER root
-COPY . ${HOME}
-## Enable this to copy files from the binder subdirectory
-## to the home, overriding any existing files.
-## Useful to create a setup on binder that is different from a
-## clone of your repository
-## COPY binder ${HOME}
-RUN chown -R ${NB_USER} ${HOME}
-
-## Become normal user again
-USER ${NB_USER}
+RUN /rocker_scripts/install_geospatial.sh
 
 ## Run an install.R script, if it exists.
-RUN if [ -f install.R ]; then R --quiet -f install.R; fi
+#RUN if [ -f install.R ]; then R --quiet -f install.R; fi
