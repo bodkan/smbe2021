@@ -1,11 +1,10 @@
+channel_priority: strict
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - libstdcxx-ng
   - r-base
-  - r-tidyverse
-  - geos
   - r-rgeos
   - r-rgdal
   - r-sf
+  - libgcc-ng
