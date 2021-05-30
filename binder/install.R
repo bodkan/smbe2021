@@ -1,3 +1,3 @@
 install.packages("devtools")
 install.packages("tidyverse")
-devtools::install_github("bodkan/spannr")
+devtools::install_github("bodkan/slendr")
