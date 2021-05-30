@@ -10,11 +10,11 @@ Please note that because the binder could instance does not have a SLiM installa
 
 ## Project website
 
-Our project lives at [www.bodkan.net/spannr](https://www.bodkan.net/spannr), which is where you can find extensive documentation such as the [manual](https://bodkan.net/spannr/reference/index.html) and a detailed [tutorial](https://bodkan.net/spannr/articles/tutorial.html). Everything is still work in progress and we are actively fixing bugs and adding new features (while adding new bugs). If you are interested in using our software once things become more stable, checking out the project website for updates is a good idea.
+Our project lives at [www.bodkan.net/slendr](https://www.bodkan.net/slendr), which is where you can find extensive documentation such as the [manual](https://bodkan.net/slendr/reference/index.html) and a detailed [tutorial](https://bodkan.net/slendr/articles/tutorial.html). Everything is still work in progress and we are actively fixing bugs and adding new features (while adding new bugs). If you are interested in using our software once things become more stable, checking out the project website for updates is a good idea.
 
 ## GitHub repository
 
-The GitHub repository of the project is located [here](https://github.com/bodkan/spannr). In case you run into any bugs or if you would like to suggest a new feature, please feel free to open an [issue](https://github.com/bodkan/spannr/issues).
+The GitHub repository of the project is located [here](https://github.com/bodkan/slendr). In case you run into any bugs or if you would like to suggest a new feature, please feel free to open an [issue](https://github.com/bodkan/slendr/issues).
 
 ## Contact information
 
