@@ -1,4 +1,4 @@
-library(spannr)
+library(slendr)
 
 map <- world(xrange = c(-15, 60), yrange = c(20, 65),
              landscape = "naturalearth", crs = "EPSG:3035")
@@ -14,13 +14,13 @@ anatolia <- region(map = map, polygon = list(
 )
 
 ehg <- population( # Eastern hunter-gatherers
-  "EHG", time = 10000, N = 4000, map = map,
+  "EHG", time = 10000, N = 4000, map = map, remove = 7000,
   polygon = list(c(26, 55), c(38, 53), c(48, 53), c(60, 53),
                  c(60, 60), c(48, 63), c(38, 63), c(26, 60))
 )
 
 ana <- population( # Anatolian farmers
-  name = "ANA", time = 10000, N = 8000,
+  name = "ANA", time = 10000, N = 8000, remove = 4000,
   map = map, polygon = anatolia
 ) %>%
   expand(by = 2500e3, start = 10000, end = 7000,
@@ -32,9 +32,11 @@ eur <- population( # European population
 )
 
 yam <- population( # Yamnaya steppe population
-  name = "YAM", time = 7000, N = 3000, parent = ehg,
-  polygon = list(c(26, 50), c(38, 49), c(48, 50),
-                 c(48, 56), c(38, 59), c(26, 56))
+  name = "YAM", time = 7000, N = 3000, remove = 3000,
+  parent = ehg, polygon = list(
+    c(26, 50), c(38, 49), c(48, 50),
+    c(48, 56), c(38, 59), c(26, 56)
+  )
 ) %>%
   move(trajectory = c(15, 50), start = 5000, end = 3000,
        snapshots = 8)
