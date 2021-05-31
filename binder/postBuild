@@ -1,12 +1,18 @@
 mkdir bin
+
+# installation instructions from the SLiM manual:
 wget http://benhaller.com/slim/SLiM.zip
 unzip SLiM.zip
 cd SLiM
 cmake .
 make slim
+
+# move the compiled binary to location in  $PATH
 cd ../
 mv SLiM/slim bin/
 rm SLiM.zip
 rm -rf SLiM
 export PATH=/home/jovyan/bin:$PATH
+
+# add $PATH to R
 echo "PATH=$PATH" > ~/.Renviron
