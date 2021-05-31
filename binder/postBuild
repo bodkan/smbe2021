@@ -1,8 +1,12 @@
+mkdir bin
 wget http://benhaller.com/slim/SLiM.zip
 unzip SLiM.zip
-mkdir build
-cd build
-cmake ../SLiM
+cd SLiM
+cmake .
 make slim
-export PATH=`pwd`:$PATH
+cd ../
+mv SLiM/slim bin/
+rm SLiM.zip
+rm -rf SLiM
+export PATH=/home/jovyan/bin:$PATH
 echo "PATH=$PATH" > ~/.Renviron
