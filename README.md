@@ -4,11 +4,14 @@
 
 **Authors:** Martin Petr, Benjamin C. Haller, Peter L. Ralph, Fernando Racimo
 
-First of all, you can open an RStudio session with the example script from our poster in your browser (no installation needed):
+
+## Running the code from our poster
+
+You can open an RStudio session with the example script from our poster directly in your web browser (no installation needed):
 
 [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/bodkan/smbe2021/main?urlpath=rstudio)
 
-In case the binder appears to be starting very slowly, please be patient. We used a freely available binder cloud server which can sometimes take a minute to load up.
+In case the binder cloud instance appears to be starting very slowly, please be patient. The binder cloud server can sometimes take a minute to load up.
 
 ## Project website
 
