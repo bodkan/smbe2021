@@ -1,16 +1,18 @@
 # A framework for simulating spatio-temporal population genomic data on a real geographic landscape
 
-## *Companion repository for the SMBE 2021 poster*
+## *Companion repository for the [SMBE 2021 poster](SMBE2021_poster.pdf)*
+
+**Authors:** Martin Petr, Benjamin C. Haller, Peter L. Ralph, Fernando Racimo
 
 First of all, you can open an RStudio session with the example script from our poster in your browser (no installation needed):
 
 [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/bodkan/smbe2021/main?urlpath=rstudio)
 
-Please note that because the binder could instance does not have a SLiM installation, you will not be able to run the **step 6** from our poster (the SLiM simulation itself). Everything else, including the interactive shiny app (**step 5**), should work without any issues. In case the binder appears to be starting very slowly, please be patient. Sometime it takes a while to load up.
+In case the binder appears to be starting very slowly, please be patient. We used a freely available binder cloud server which can sometimes take a minute to load up.
 
 ## Project website
 
-Our project lives at [www.bodkan.net/slendr](https://www.bodkan.net/slendr), which is where you can find extensive documentation such as the [manual](https://bodkan.net/slendr/reference/index.html) and a detailed [tutorial](https://bodkan.net/slendr/articles/tutorial.html). Everything is still work in progress and we are actively fixing bugs and adding new features (while adding new bugs). If you are interested in using our software once things become more stable, checking out the project website for updates is a good idea.
+You can find extensive documentation at the [project's website](https://bodkan.net/slendr), such as the [manual pages](https://bodkan.net/slendr/reference/index.html) and a detailed [tutorial](https://bodkan.net/slendr/articles/tutorial.html). Everything is still work in progress and we are actively fixing bugs and adding new features. If you are interested in using our software once things become more stable, checking out the project website for updates regularly is a good idea.
 
 ## GitHub repository
 
