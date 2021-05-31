@@ -2,9 +2,6 @@
 
 ## *Companion repository for the [SMBE 2021 poster](SMBE2021_poster.pdf)*
 
-**Authors:** Martin Petr, Benjamin C. Haller, Peter L. Ralph, Fernando Racimo
-
-
 ## Running the code from our poster
 
 You can open an RStudio session with the example script from our poster directly in your web browser (no installation needed):
