@@ -7,12 +7,16 @@ cd SLiM
 cmake .
 make slim
 
-# move the compiled binary to location in  $PATH
+# move the compiled SLiM binary
 cd ../
 mv SLiM/slim bin/
 rm SLiM.zip
 rm -rf SLiM
-export PATH=/home/jovyan/bin:$PATH
+
+# install gifski to enable animation rendering
+cargo install gifski
+
+export PATH=/home/jovyan/bin:/home/jovyan/.cargo/bin:$PATH
 
 # add $PATH to R
 echo "PATH=$PATH" > ~/.Renviron
