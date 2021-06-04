@@ -17,6 +17,4 @@ rm -rf SLiM
 cargo install gifski
 
 export PATH=/home/jovyan/bin:/home/jovyan/.cargo/bin:$PATH
-
-# add $PATH to R
 echo "PATH=$PATH" > ~/.Renviron
