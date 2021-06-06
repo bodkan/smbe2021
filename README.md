@@ -12,8 +12,10 @@ In case the binder cloud instance appears to be starting very slowly, please be 
 
 We provide two examples:
 
-- `poster_example.R`: a short example from the poster
-- `longer_example.R`: a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/tutorial.html) vignette
+- `[poster_example.R](poster_example.R)`: a short example from the poster
+- `[longer_example.R](longer_example.R)`: a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/tutorial.html) vignette
+
+Once the browser-based RStudio session loads, you can open those scripts from the RStudio file browser.
 
 ## Project website
 
