@@ -75,10 +75,10 @@ geneflows <- list(
   geneflow(yam, eur, start = 4000, end = 3000, rate = 0.75)
 )
 
-# model compilation -------------------------------------------------------
+# 4. model compilation ----------------------------------------------------
 
 model <- compile(
-  populations = list(ehg, ana, yam, eur), geneflows = geneflows,
+  populations = list(ehg, ana, yam, eur), geneflow = geneflows,
   generation_time = 30, resolution = 10e3,
   competition_dist = 200e3, mate_dist = 200e3,
   offspring_dist = 100e3, dir = "/tmp/test-model",
@@ -93,12 +93,8 @@ model # when printed, model objects present a brief summary
 # to open a popup window)
 explore(model)
 
-# only show the embedded admixture graph
-graph(model)
-
 # 6. execution in SLiM ----------------------------------------------------
 
-# we modified the SLiM script to be able to run it in the binder cloud
 slim(
   model, seq_length = 1, recomb_rate = 0,
   save_locations = TRUE, # only record the locations of all individuals

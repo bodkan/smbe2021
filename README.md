@@ -1,6 +1,6 @@
 # A framework for simulating spatio-temporal population genomic data on a real geographic landscape
 
-## *Companion repository for the [SMBE 2021 poster](SMBE2021_poster.pdf)*
+## *Companion repository for our [SMBE 2021 poster](SMBE2021_poster.pdf)*
 
 ## Running the code from our poster
 
@@ -9,6 +9,11 @@ You can open an RStudio session with the example script from our poster directly
 [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/bodkan/smbe2021/main?urlpath=rstudio)
 
 In case the binder cloud instance appears to be starting very slowly, please be patient. The binder cloud server can sometimes take a minute to load up.
+
+We provide two examples:
+
+- `poster_example.R`: a short example from the poster
+- `longer_example.R`: a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/tutorial.html) vignette
 
 ## Project website
 
