@@ -7,7 +7,7 @@
 # in the root of this repository).
 
 # the package is already installed and we can simply load it
-library(slendr)
+devtools::load_all("~/projects/slendr")
 
 # 1. spatial context ------------------------------------------------------
 
@@ -131,5 +131,5 @@ explore(model)
 slim(
   model, seq_length = 1, recomb_rate = 0,
   save_locations = TRUE, track_ancestry = F,
-  method = "batch"
+  method = "batch", verbose = TRUE
 )
