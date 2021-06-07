@@ -7,7 +7,7 @@
 # in the root of this repository).
 
 # the package is already installed and we can simply load it
-devtools::load_all("~/projects/slendr")
+library(slendr)
 
 # 1. spatial context ------------------------------------------------------
 
