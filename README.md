@@ -8,7 +8,7 @@ You can open an RStudio session with the example script from our poster directly
 
 [![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/bodkan/smbe2021/main?urlpath=rstudio)
 
-In case the binder cloud instance appears to be starting very slowly, please be patient. The binder cloud server can sometimes take a minute to load up.
+In case the binder cloud instance appears to be starting very slowly, please be patient. The binder cloud server can sometimes take a minute to load up. Sometimes it even crashes completely. If that happens, try reloading the page - this will restart the binder session.
 
 We provide two examples:
 
