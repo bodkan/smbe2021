@@ -80,9 +80,8 @@ geneflows <- list(
 model <- compile(
   populations = list(ehg, ana, yam, eur), geneflow = geneflows,
   generation_time = 30, resolution = 10e3,
-  competition_dist = 200e3, mate_dist = 200e3,
-  offspring_dist = 100e3, dir = "/tmp/test-model",
-  overwrite = TRUE
+  competition_dist = 200e3, mate_dist = 200e3, offspring_dist = 100e3,
+  dir = "/tmp/test-model", overwrite = TRUE
 )
 
 model # when printed, model objects present a brief summary

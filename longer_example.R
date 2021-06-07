@@ -131,5 +131,5 @@ explore(model)
 slim(
   model, seq_length = 1, recomb_rate = 0,
   save_locations = TRUE, track_ancestry = F,
-  method = "gui"
+  method = "batch"
 )
