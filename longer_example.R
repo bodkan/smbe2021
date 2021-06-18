@@ -25,7 +25,7 @@ plot(map)
 africa <- region(
   "Africa", map,
   polygon = list(c(-18, 20), c(40, 20), c(30, 33),
-                 c(20, 32), c(10, 35), c(-8, 35))
+                 c(20, 33), c(10, 38), c(-8, 35))
 )
 europe <- region(
   "Europe", map,
@@ -59,7 +59,7 @@ ooa <- population(
 ) %>%
   move(
     trajectory = list(c(40, 30), c(50, 30), c(60, 40)),
-    start = 50000, end = 40000, snapshots = 30
+    start = 50000, end = 40000
   )
 plot(ooa)
 
@@ -83,7 +83,7 @@ ana <- population(
   center = c(34, 38), radius = 500e3, polygon = anatolia
 ) %>%
   expand(
-    by = 2500e3, start = 10000, end = 7000, snapshots = 10,
+    by = 2500e3, start = 10000, end = 7000,
     polygon = join(europe, anatolia)
   )
 plot(ana)
@@ -93,10 +93,7 @@ yam <- population(
   polygon = list(c(26, 50), c(38, 49), c(48, 50),
                  c(48, 56), c(38, 59), c(26, 56))
 ) %>%
-  move(
-    trajectory = c(15, 50),
-    start = 5000, end = 3000, snapshots = 8
-  )
+  move(trajectory = c(15, 50),start = 5000, end = 3000)
 plot(yam)
 
 # 3. geneflow events ------------------------------------------------------

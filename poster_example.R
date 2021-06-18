@@ -12,8 +12,8 @@ library(slendr)
 map <- world(xrange = c(-15, 60), yrange = c(20, 65),
              landscape = "naturalearth", crs = "EPSG:3035")
 
-# 'plot' is our generic function able to plot all spatial objects
-# created by this package
+# 'plot' is our generic function which is able to plot all spatial
+# objects created by this package
 plot(map)
 
 # geographic regions used later to define population boundaries
@@ -46,7 +46,7 @@ ana <- population( # Anatolian farmers
   map = map, polygon = anatolia
 ) %>%
   expand(by = 2500e3, start = 10000, end = 7000,
-         snapshots = 10, polygon = join(europe, anatolia))
+         polygon = join(europe, anatolia))
 plot(ana)
 
 eur <- population( # European population
@@ -62,8 +62,7 @@ yam <- population( # Yamnaya steppe population
     c(48, 56), c(38, 59), c(26, 56)
   )
 ) %>%
-  move(trajectory = c(15, 50), start = 5000, end = 3000,
-       snapshots = 8)
+  move(trajectory = c(15, 50), start = 5000, end = 3000)
 plot(yam)
 
 
