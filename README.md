@@ -2,6 +2,8 @@
 
 ## *Companion repository for our [SMBE 2021 poster](SMBE2021_poster.pdf)*
 
+I like [binder](http://mybinder.org) so much that in the long run, I intend to maintain this Github repository as a collection of interactive demo scripts showcasing the [_slendr_](https://bodkan.net/slendr) package instead of a one-off for the SMBE 2021 poster session. If you're interested, it might make sense to come back for later updates.
+
 ## Running the code from our poster
 
 You can open an RStudio session with the example script from our poster directly in your web browser (no installation needed):
