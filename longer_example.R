@@ -48,23 +48,23 @@ plot(africa, europe, anatolia)
 # decreased the number of individuals in each population `N`
 
 afr <- population(
-  "AFR", parent = "ancestor", time = 52000, N = 2000,
+  "AFR", parent = "ancestor", time = 52000, N = 10000,
+  competition_dist = 250e3, mate_dist = 200e3,
+  offspring_dist = 70e3,
   map = map, polygon = africa
 )
 plot(afr)
 
 ooa <- population(
-  "OOA", parent = afr, time = 51000, N = 200,
+  "OOA", parent = afr, time = 51000, N = 1000, remove = 14000,
   center = c(33, 30), radius = 400e3
 ) %>%
-  move(
-    trajectory = list(c(40, 30), c(50, 30), c(60, 40)),
-    start = 50000, end = 40000
-  )
+  move(trajectory = list(c(40, 30), c(50, 30), c(60, 40)),
+       start = 50000, end = 40000, snapshots = 30)
 plot(ooa)
 
 ehg <- population(
-  "EHG", parent = ooa, time = 28000, N = 400,
+  "EHG", parent = ooa, time = 28000, N = 4000, remove = 5000,
   polygon = list(
     c(26, 55), c(38, 53), c(48, 53), c(60, 53),
     c(60, 60), c(48, 63), c(38, 63), c(26, 60)
@@ -73,27 +73,28 @@ ehg <- population(
 plot(ehg)
 
 eur <- population(
-  name = "EUR", parent = ehg, time = 25000, N = 1000,
-  polygon = europe
-)
+  name = "EUR", parent = ehg, time = 25000, N = 5000,
+  polygon = europe,
+  competition_dist = 400e3, mate_dist = 200e3, offspring_dist = 25e3
+) %>%
+  resize(N = 10000, time = 5000)
 plot(eur)
 
 ana <- population(
-  name = "ANA", time = 28000, N = 800, parent = ooa,
+  name = "ANA", time = 28000, N = 5000, parent = ooa, remove = 5000,
   center = c(34, 38), radius = 500e3, polygon = anatolia
 ) %>%
   expand(
     by = 2500e3, start = 10000, end = 7000,
-    polygon = join(europe, anatolia)
-  )
+    polygon = join(europe, anatolia), snapshots = 20)
 plot(ana)
 
 yam <- population(
-  name = "YAM", time = 7000, N = 600, parent = ehg,
+  name = "YAM", time = 7000, N = 2000, parent = ehg,
   polygon = list(c(26, 50), c(38, 49), c(48, 50),
                  c(48, 56), c(38, 59), c(26, 56))
 ) %>%
-  move(trajectory = c(15, 50),start = 5000, end = 3000)
+  move(trajectory = c(15, 50),start = 5000, end = 3000, snapshots = 10)
 plot(yam)
 
 # 3. geneflow events ------------------------------------------------------
@@ -107,11 +108,9 @@ geneflows <- list(
 # 4. model compilation ----------------------------------------------------
 
 model <- compile(
-  populations = list(afr, ooa, ehg, eur, ana, yam),
-  geneflow = geneflows,
+  populations = list(afr, ooa, ehg, ana, eur, yam), geneflow = geneflows,
   generation_time = 30, resolution = 10e3,
-  competition_dist = 130e3, mate_dist = 100e3,
-  offspring_dist = 70e3,
+  competition_dist = 200e3, mate_dist = 200e3, offspring_dist = 70e3,
   dir = "/tmp/demo-model/", overwrite = TRUE
 )
 

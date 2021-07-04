@@ -1,8 +1,14 @@
 # A framework for simulating spatio-temporal population genomic data on a real geographic landscape
 
-## *Companion repository for our [SMBE 2021 poster](SMBE2021_poster.pdf)*
+## *Companion repository for my [SMBE 2021 poster](SMBE2021_poster.pdf)*
 
-I like [binder](http://mybinder.org) so much that in the long run, I intend to maintain this Github repository as a collection of interactive demo scripts showcasing the [_slendr_](https://bodkan.net/slendr) package instead of a one-off for the SMBE 2021 poster session. If you're interested, it might make sense to come back for later updates.
+This is a repository with simulation code examples for my SMBE 2021 poster about the new R package [*slendr*](https://github.com/bodkan/slendr). Below, you will find some information about running the examples yourself in a browser-based RStudio session, without having to install anything on your own computer.
+
+If you're not interested in doing that but would still like to see what kinds of simulations are now possible, take a look at this animation which shows the recording of [a simple simulation](longer_example.R) of the past 50 thousand years of modern human history in West Eurasia. Dots are individuals as simulated by the SLiM backend script included in the package, and the final result is a complete spatially annotated tree-sequence recording from which simulated genomes can be easily generated.
+
+![animated_gif](longer_example.gif)
+
+A much more detailed explanation of the typical simulation workflow can be found on the [project's website](https://bodkan.net/slendr) and in the [tutorial](https://bodkan.net/slendr/articles/tutorial.html).
 
 ## Running the code from our poster
 
@@ -14,10 +20,10 @@ In case the binder cloud instance appears to be starting very slowly, please be 
 
 We provide two examples:
 
-- [`poster_example.R`](poster_example.R): a short example from the poster
-- [`longer_example.R`](longer_example.R): a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/tutorial.html) vignette
+-   [`poster_example.R`](poster_example.R): a short example from the poster
+-   [`longer_example.R`](longer_example.R): a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/tutorial.html) vignette which generated the simulation above
 
-Once the browser-based RStudio session loads, you can open those scripts from the RStudio file browser.
+Once the browser-based RStudio session loads, you can open those scripts from the RStudio file browser and try them for yourself.
 
 ## Project website
 
