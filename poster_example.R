@@ -1,6 +1,6 @@
 # This is an exact copy of the script from our poster, with
 # several minor modifications (to make it run in a cloud binder
-# instance) or additionas (we have a chance to show a little bit
+# instance) or additions (we have a chance to show a little bit
 # more there han we could in the poster). We have documented these
 # changes in comments below.
 
@@ -35,34 +35,36 @@ plot(europe, anatolia)
 # decreased the number of individuals in each population `N`
 
 ehg <- population( # Eastern hunter-gatherers
-  "EHG", time = 10000, N = 1000, map = map, remove = 7000,
+  "EHG", time = 15000, N = 5000, map = map, remove = 6500,
   polygon = list(c(26, 55), c(38, 53), c(48, 53), c(60, 53),
                  c(60, 60), c(48, 63), c(38, 63), c(26, 60))
 )
 plot(ehg)
 
 ana <- population( # Anatolian farmers
-  name = "ANA", time = 10000, N = 1000, remove = 4000,
+  name = "ANA", time = 15000, N = 10000, remove = 4000,
   map = map, polygon = anatolia
 ) %>%
   expand(by = 2500e3, start = 10000, end = 7000,
-         polygon = join(europe, anatolia))
+         polygon = join(europe, anatolia), snapshots = 10)
 plot(ana)
 
 eur <- population( # European population
-  name = "EUR", time = 10000, N = 1000,
-  map = map, polygon = europe
-)
+  name = "EUR", time = 15000, N = 5000,
+  map = map, polygon = europe,
+  competition_dist = 400e3, mate_dist = 200e3, offspring_dist = 25e3
+) %>%
+  resize(N = 10000, time = 5000)
 plot(eur)
 
 yam <- population( # Yamnaya steppe population
-  name = "YAM", time = 7000, N = 1000, remove = 3000,
+  name = "YAM", time = 7000, N = 2000, remove = 3000,
   parent = ehg, polygon = list(
     c(26, 50), c(38, 49), c(48, 50),
     c(48, 56), c(38, 59), c(26, 56)
   )
 ) %>%
-  move(trajectory = c(15, 50), start = 5000, end = 3000)
+  move(trajectory = c(15, 50), start = 5000, end = 3000, snapshots = 10)
 plot(yam)
 
 
@@ -79,7 +81,7 @@ geneflows <- list(
 model <- compile(
   populations = list(ehg, ana, yam, eur), geneflow = geneflows,
   generation_time = 30, resolution = 10e3,
-  competition_dist = 200e3, mate_dist = 200e3, offspring_dist = 100e3,
+  competition_dist = 200e3, mate_dist = 200e3, offspring_dist = 70e3,
   dir = "/tmp/test-model", overwrite = TRUE
 )
 
