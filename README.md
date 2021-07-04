@@ -8,7 +8,7 @@ If you're not interested in doing that but would still like to see what kinds of
 
 ![animated_gif](longer_example.gif)
 
-A much more detailed explanation of the typical simulation workflow can be found on the [project's website](https://bodkan.net/slendr) and in the [tutorial](https://bodkan.net/slendr/articles/tutorial.html).
+A much more detailed explanation of the typical simulation workflow can be found on the [project's website](https://bodkan.net/slendr) and in the [tutorial](https://bodkan.net/slendr/articles/articles/slendr.html).
 
 ## Running the code from our poster
 
@@ -21,13 +21,13 @@ In case the binder cloud instance appears to be starting very slowly, please be 
 We provide two examples:
 
 -   [`poster_example.R`](poster_example.R): a short example from the poster
--   [`longer_example.R`](longer_example.R): a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/tutorial.html) vignette which generated the simulation above
+-   [`longer_example.R`](longer_example.R): a longer, more interesting example adapted from the [tutorial](https://bodkan.net/slendr/articles/articles/slendr.html) vignette which generated the simulation above
 
 Once the browser-based RStudio session loads, you can open those scripts from the RStudio file browser and try them for yourself.
 
 ## Project website
 
-You can find extensive documentation at the [project's website](https://bodkan.net/slendr), such as the [manual pages](https://bodkan.net/slendr/reference/index.html) and a detailed [tutorial](https://bodkan.net/slendr/articles/tutorial.html). Everything is still work in progress and we are actively fixing bugs and adding new features. If you are interested in using our software once things become more stable, checking out the project website for updates regularly is a good idea.
+You can find extensive documentation at the [project's website](https://bodkan.net/slendr), such as the [manual pages](https://bodkan.net/slendr/reference/index.html) and a detailed [tutorial](https://bodkan.net/slendr/articles/articles/slendr.html). Everything is still work in progress and we are actively fixing bugs and adding new features. If you are interested in using our software once things become more stable, checking out the project website for updates regularly is a good idea.
 
 ## GitHub repository
 
