@@ -1,6 +1,4 @@
-# A framework for simulating spatio-temporal population genomic data on a real geographic landscape
-
-## *Companion repository for my [SMBE 2021 poster](SMBE2021_poster.pdf)*
+# *A companion repository for my [SMBE 2021 poster](SMBE2021_poster.pdf)*
 
 **Note: If you're having trouble getting hold of me during SMBE2021 poster sessions, feel free to reach out at _smbe2021@bodkan.net_. I'm more than happy to schedule a separate meeting on Zoom.**
 
