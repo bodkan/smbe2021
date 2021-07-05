@@ -2,6 +2,8 @@
 
 ## *Companion repository for my [SMBE 2021 poster](SMBE2021_poster.pdf)*
 
+**Note: If you're having trouble getting hold of me during SMBE2021 poster sessions, feel free to reach out at _smbe2021@bodkan.net_. I'm more than happy to schedule a separate meeting on Zoom.**
+
 This is a repository with simulation code examples for my SMBE 2021 poster about the new R package [*slendr*](https://github.com/bodkan/slendr). Below, you will find some information about running the examples yourself in a browser-based RStudio session, without having to install anything on your own computer.
 
 If you're not interested in doing that but would still like to see what kinds of simulations are now possible, take a look at this animation which shows the recording of [a simple simulation](longer_example.R) of the past 50 thousand years of modern human history in West Eurasia. Dots are individuals as simulated by the SLiM backend script included in the package, and the final result is a complete spatially annotated tree-sequence recording from which simulated genomes can be easily generated.
